@@ -9,7 +9,6 @@ function install-dotfiles {
 	    f=`basename $filename`
 	    ln -s $filename ~/$f
 		echo "ln -s $filename ~/$f"
-	    fi
 	fi
     done
 }
