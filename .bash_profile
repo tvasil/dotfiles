@@ -1,13 +1,16 @@
+# Bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# GOPATH
 export GOPATH=$HOME/golang/projects
 
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
+# Colors & PS1 appearance
 clr_apricot='\033[38;5;173m'
 clr_reset='\e[0m' 
+clr_yellow='\033[33m'
+clr_wine='\033[38;5;162m'
 
-export PS1="\[$clr_apricot\](\$(basename \"\$CONDA_PREFIX\")) \[$clr_reset\]\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[$clr_apricot\](\$(basename \"\$CONDA_PREFIX\")) \[$clr_reset\]\u@\h \[$clr_yellow\]\w\[$clr_wine\]\$(__git_ps1)\[$clr_reset\] $ "
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
