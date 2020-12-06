@@ -1,0 +1,7 @@
+[user]
+	name = Tania Vasilikioti
+	email = vassilikiotis@hotmail.com
+[core]
+	editor = vim
+[alias]
+	lg = log --all --graph --decorate --oneline
