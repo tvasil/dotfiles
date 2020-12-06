@@ -3,6 +3,7 @@
 	email = vassilikiotis@hotmail.com
 [core]
 	editor = vim
+	excludesfile = /Users/tania/.gitignore_global
 [alias]
 	lg = log --all --graph --decorate --oneline
 [color]
