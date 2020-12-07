@@ -28,7 +28,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # ALIASES #
-alias mv="mv it"
 alias ll="ls -lha"
 alias gs="git status"
 alias sl=ls
